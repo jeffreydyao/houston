@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 
 export const baseMetadata = {
   url: "https://jyao.me",
@@ -39,14 +40,33 @@ export const metadata: Metadata = {
   },
 };
 
+const InterVariable = localFont({
+  src: [
+    {
+      path: "../fonts/inter-variable.woff2",
+      style: "normal",
+    },
+    {
+      path: "../fonts/inter-variable-italic.woff2",
+      style: "italic",
+    },
+  ],
+  display: "swap",
+  variable: "--font-inter-var",
+});
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className={`${InterVariable.variable}`}>
+      <body className="flex items-center justify-center px-8 lg:px-0">
+        <main className="flex-auto min-w-0 max-w-4xl mt-16 flex flex-col">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }

@@ -49,12 +49,14 @@ export default function AnimatedWords() {
           {window?.map((word, i) => (
             <li
               key={word}
-              className={`font-semibold text-xl ${
+              className={`font-semibold text-xl transition-all transform-gpu ${
                 i === 0
-                  ? `transition-all transform-gpu ${
-                      animating ? "-mt-7 opacity-0" : "mt-0 opacity-100"
-                    }`
-                  : !animating && "hidden"
+                  ? animating
+                    ? "-mt-7 opacity-0"
+                    : "mt-0 opacity-100"
+                  : animating
+                  ? "opacity-100"
+                  : "opacity-0 invisible"
               }`}
             >
               <p> {word}</p>

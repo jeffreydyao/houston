@@ -45,10 +45,12 @@ const InterVariable = localFont({
     {
       path: "../fonts/inter-variable.woff2",
       style: "normal",
+      weight: "100 900",
     },
     {
       path: "../fonts/inter-variable-italic.woff2",
       style: "italic",
+      weight: "100 900",
     },
   ],
   display: "swap",
@@ -62,7 +64,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${InterVariable.variable}`}>
-      <body className="flex items-center justify-center px-8 lg:px-0">
+      <body className="flex items-center justify-center px-8 lg:px-0 text-sm">
         <main className="flex-auto min-w-0 max-w-4xl mt-16 flex flex-col">
           {children}
         </main>

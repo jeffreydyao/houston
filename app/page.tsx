@@ -4,7 +4,9 @@ import { CodeSimple } from "@phosphor-icons/react/dist/ssr";
 export default function Home() {
   return (
     <section>
-      <h1 className="font-semibold text-xl">Hi, I'm Jeffrey Yao</h1>
+      <h1 className="font-semibold text-xl leading-tight">
+        Hi, I'm Jeffrey Yao
+      </h1>
       <p className="font-semibold text-xl">
         a software engineer
         <CodeSimple
@@ -13,7 +15,7 @@ export default function Home() {
           weight="fill"
         />
       </p>
-      <div className="font-semibold text-xl inline-flex gap-1">
+      <div className="font-semibold text-xl inline-flex gap-1 -mt-[3px]">
         <p>and</p>
         <DescriptorCarousel />
       </div>

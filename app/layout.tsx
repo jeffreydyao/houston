@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
-export const baseMetadata = {
+const baseMetadata = {
   url: "https://jyao.me",
   title: "Jeffrey Yao",
   description: "Software enigneer, writer, and creator.",

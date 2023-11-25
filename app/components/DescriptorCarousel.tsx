@@ -76,7 +76,7 @@ export default function DescriptorCarousel() {
           {window?.map((descriptor, i) => (
             <li
               key={descriptor.word}
-              className={`font-semibold text-xl transition-all flex gap-1.5 items-center transform-gpu ${
+              className={`font-medium text-xl transition-all flex gap-1.5 items-center transform-gpu ${
                 i === 0
                   ? animating
                     ? "-mt-7 opacity-0"

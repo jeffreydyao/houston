@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  /** Inter Display */
+  font-variation-settings: "opsz" 32;
+}

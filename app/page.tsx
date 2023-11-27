@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <section>
       <h1 className="font-medium text-xl leading-tight">Hi, I'm Jeffrey Yao</h1>
-      <p className="font-medium text-xl">
+      <p className="font-medium text-xl text-horizon-500">
         a software engineer
         <CodeSimple
           alt="An icon depicting a code bracket"
